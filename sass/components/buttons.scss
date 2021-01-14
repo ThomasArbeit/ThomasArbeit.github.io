@@ -1,0 +1,22 @@
+.button{
+    padding: 10px 16px;
+    border: none;
+    background: $grad-bgrcolor-primary;
+    color: $font-color-tertiary;
+    font-weight: 700;
+    font-size: 15px;
+
+    &--secondary{
+        padding: 8px 14px;
+        border: 2px solid #717171;
+        background: $background-color-primary;
+        color: $font-color-quartiary;
+        font-weight: 400;
+    }
+
+    &--tertiary{
+        background: $background-color-primary;
+        color: $font-color-quartiary;
+        font-weight: 400;
+    }
+}

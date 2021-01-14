@@ -1,0 +1,52 @@
+.hero{
+    text-align: center;
+    position: relative;
+    height: 100vh;
+
+    padding-top: 43px;
+
+    &__title{
+        font-size: 30px;
+        line-height: 35px;
+        margin-bottom: 36px;
+        font-weight: 600;
+
+        span{
+            color: $font-color-enhance;
+        }
+    }
+
+    &__subtitle{
+        font-size: 15px;
+        line-height: 25px;
+        color: $font-color-secondary;
+        font-weight: 400;
+
+        margin-bottom: 60px;
+    }
+
+    &__ctas{
+        display: flex;
+        flex-direction: column;
+
+        :nth-child(1){
+            margin-bottom: 20px;
+        }
+    }
+
+    &__cta{
+        display: inline-block;
+        margin: auto;
+        width: 100%;
+    }
+
+    &__watermark{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        z-index: -1;
+
+        transform: translateX(50%);
+    }
+}

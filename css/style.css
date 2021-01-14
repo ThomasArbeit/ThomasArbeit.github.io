@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  color: #EBEBEB;
+}
+
+body {
+  background-color: #1A1A1A;
+}
+
+.l-page {
+  background-image: linear-gradient(90deg, transparent 0px, transparent calc(100%/2), rgba(255, 255, 255, 0.03) calc((100%/2) + 2px), transparent calc((100%/2) + 4px));
+  height: 100%;
+  border-right: 2px solid rgba(255, 255, 255, 0.03);
+  border-left: 2px solid rgba(255, 255, 255, 0.03);
+  margin: 0 39px;
+}
+.l-page--noline {
+  background: transparent;
+  border: none;
+  padding: 0 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 96px;
+}
+.header__logo {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.button {
+  padding: 10px 16px;
+  border: none;
+  background: linear-gradient(90deg, #FF9D5B, #6C4C74);
+  color: #1A1A1A;
+  font-weight: 700;
+  font-size: 15px;
+}
+.button--secondary {
+  padding: 8px 14px;
+  border: 2px solid #717171;
+  background: #1A1A1A;
+  color: #C4C4C4;
+  font-weight: 400;
+}
+.button--tertiary {
+  background: #1A1A1A;
+  color: #C4C4C4;
+  font-weight: 400;
+}
+
+.hero {
+  text-align: center;
+  position: relative;
+  height: 100vh;
+  padding-top: 43px;
+}
+.hero__title {
+  font-size: 30px;
+  line-height: 35px;
+  margin-bottom: 36px;
+  font-weight: 600;
+}
+.hero__title span {
+  color: #E38E60;
+}
+.hero__subtitle {
+  font-size: 15px;
+  line-height: 25px;
+  color: #ACACAC;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+.hero__ctas {
+  display: flex;
+  flex-direction: column;
+}
+.hero__ctas :nth-child(1) {
+  margin-bottom: 20px;
+}
+.hero__cta {
+  display: inline-block;
+  margin: auto;
+  width: 100%;
+}
+.hero__watermark {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  transform: translateX(50%);
+}
+
+.portfolio {
+  padding: 96px 0 142px 0;
+  text-align: center;
+}
+.portfolio__title {
+  font-size: 30px;
+  font-weight: 600;
+}
+.portfolio__subtitle {
+  font-size: 15px;
+  line-height: 25px;
+  color: #ACACAC;
+  margin-bottom: 62px;
+}
+.portfolio__img {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.portfolio__img img {
+  width: 100%;
+}
+.portfolio__img::before {
+  content: "01";
+  font-size: 100px;
+  font-weight: 600;
+  line-height: 100px;
+  opacity: 5%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-30%);
+}
+.portfolio__itemtitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.portfolio__tags {
+  width: 80%;
+  margin: 0 auto 28px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.portfolio__tag {
+  font-size: 15px;
+  color: #5b5b5b;
+  font-weight: 700;
+  font-style: italic;
+}
+.portfolio__ctas {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 135px;
+}
+.portfolio__ctas--last {
+  margin-bottom: 0;
+}
+.portfolio__button {
+  width: 50%;
+}
+
+.cta {
+  background: linear-gradient(90deg, #FF9D5B, #6C4C74);
+  padding: 30px 0px 45px;
+  text-align: center;
+}
+.cta__title {
+  color: #1A1A1A;
+  font-size: 30px;
+  line-height: 39px;
+  margin-bottom: 35px;
+}
+.cta__button {
+  padding-right: 26px;
+  padding-left: 26px;
+}
+
+.skills {
+  padding-top: 87px;
+  text-align: center;
+}
+.skills__title {
+  font-size: 30px;
+  font-weight: 600;
+}
+.skills__subtitle {
+  font-size: 15px;
+  color: #ACACAC;
+  margin-bottom: 70px;
+}
+.skills__skillTitle {
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.skills__paragraph {
+  color: #878787;
+  font-size: 15px;
+  line-height: 25px;
+  margin-bottom: 21px;
+}
+.skills__tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 6%;
+  margin-bottom: 110px;
+}
+.skills__tag {
+  display: block;
+  margin: 0 8px;
+  color: #E38E60;
+  opacity: 34%;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=style.css.map */
