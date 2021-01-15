@@ -28,4 +28,8 @@ $one-third-1: calc((100%/3) + 2px);
         border: none;
         padding: 0 30px;
     }
+
+    &--nopadding{
+        padding: 0;
+    }
 }

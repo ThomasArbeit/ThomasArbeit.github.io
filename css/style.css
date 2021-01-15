@@ -23,6 +23,9 @@ body {
   border: none;
   padding: 0 30px;
 }
+.l-page--nopadding {
+  padding: 0;
+}
 
 .header {
   display: flex;
@@ -287,6 +290,52 @@ body {
 }
 .about ul li:hover path {
   fill: #E38E60;
+}
+
+.contact {
+  padding: 80px 0;
+  background: #111111;
+}
+.contact__text {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.contact__title {
+  font-size: 30px;
+  font-weight: 600;
+}
+.contact__subtitle {
+  font-size: 15px;
+  color: #ACACAC;
+}
+.contact__contact {
+  padding: 40px 20px;
+  background: #1A1A1A;
+}
+.contact__labelDiv {
+  display: block;
+  margin-bottom: 20px;
+}
+.contact__labelDiv textarea {
+  max-height: 100px;
+  overflow-y: scroll;
+}
+.contact__label {
+  font-size: 15px;
+  display: block;
+  margin-bottom: 4px;
+  color: #ACACAC;
+}
+.contact__input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #707070;
+  padding: 9px 12px;
+}
+.contact__input:focus {
+  border-color: #E38E60;
+  outline: none;
 }
 
 /*# sourceMappingURL=style.css.map */
