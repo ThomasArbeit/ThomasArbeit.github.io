@@ -1,0 +1,48 @@
+.modaleHeader{
+    position: absolute;
+    top:0;
+    right:0;
+    width: 0px;
+    height: 100vh;
+
+    background: #111111;
+
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    overflow: hidden;
+
+    transition: all 0.3s ease-in;
+
+    ul{
+        text-align: center;
+    }
+
+    li{
+        margin: 10px 0;
+        list-style-type: none;
+        display: block;
+
+        &:hover{
+            opacity: 0.5;
+        }
+    }
+
+    a{
+        white-space: nowrap;
+    }
+
+    &__close{
+        position: absolute;
+        top:43px;
+        right: 39px;
+
+        cursor: pointer;
+    }
+}

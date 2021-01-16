@@ -7,8 +7,17 @@
   color: #EBEBEB;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #1A1A1A;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
 }
 
 .l-page {
@@ -38,6 +47,9 @@ body {
   line-height: 18px;
   font-weight: 700;
 }
+.header__hamburger {
+  cursor: pointer;
+}
 
 .button {
   padding: 10px 16px;
@@ -46,6 +58,17 @@ body {
   color: #1A1A1A;
   font-weight: 700;
   font-size: 15px;
+  cursor: pointer;
+  transition: opacity 0.1s linear;
+}
+.button:hover {
+  opacity: 0.5;
+}
+.button:active {
+  opacity: 0.3;
+}
+.button:focus {
+  outline: none;
 }
 .button--secondary {
   padding: 8px 14px;
@@ -58,6 +81,43 @@ body {
   background: #1A1A1A;
   color: #C4C4C4;
   font-weight: 400;
+}
+
+.modaleHeader {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0px;
+  height: 100vh;
+  background: #111111;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  overflow: hidden;
+  transition: all 0.3s ease-in;
+}
+.modaleHeader ul {
+  text-align: center;
+}
+.modaleHeader li {
+  margin: 10px 0;
+  list-style-type: none;
+  display: block;
+}
+.modaleHeader li:hover {
+  opacity: 0.5;
+}
+.modaleHeader a {
+  white-space: nowrap;
+}
+.modaleHeader__close {
+  position: absolute;
+  top: 43px;
+  right: 39px;
+  cursor: pointer;
 }
 
 .hero {
