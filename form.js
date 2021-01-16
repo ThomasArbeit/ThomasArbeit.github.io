@@ -12,10 +12,6 @@ const submit = document.getElementById("submit");
 const regexNoEmpty = /./;
 const regexEmail = /.+@.+\..+/;
 
-let isOk = {
-    
-}
-
 // Ecoute d'évenement du bouton Submit
 
 submit.addEventListener('click', function(e){
@@ -25,10 +21,10 @@ submit.addEventListener('click', function(e){
     const titleValue = titleId.value;
     const messageValue = messageId.value;
 
-    verfiy(nameValue, regexNoEmpty, "Votre nom n'est pas valide", "name");
-    verfiy(emailValue, regexEmail, "Votre email n'est pas valide", "email");
-    verfiy(titleValue, regexNoEmpty, "Votre titre n'est pas valide", "title");
-    verfiy(messageValue, regexNoEmpty, "Votre message n'est pas valide", "message");
+    verfiy(nameId, nameValue, regexNoEmpty, "Votre nom n'est pas valide", "name");
+    verfiy(emailId, emailValue, regexEmail, "Votre email n'est pas valide", "email");
+    verfiy(titleId, titleValue, regexNoEmpty, "Votre titre n'est pas valide", "title");
+    verfiy(messageId, messageValue, regexNoEmpty, "Votre message n'est pas valide", "message");
 
     
     if(
@@ -42,7 +38,7 @@ submit.addEventListener('click', function(e){
     } else {
         let form = {
             email : emailValue,
-            message :nameValue + ": " + titleValue + "  " + messageValue
+            message :nameValue + ": " + titleValue + ":  " + messageValue
         }
         console.log(form);
 
@@ -53,16 +49,28 @@ submit.addEventListener('click', function(e){
             },
             body: JSON.stringify(form)
         })
-        .then(response => console.log(response))
+        .then(response => {
+            console.log(response);
+            nameId.value = "";
+            emailId.value = "";
+            titleId.value = "";
+            messageId.value = "";
+        })
     }
 })
 
 // Fonction verification des entrées
 
-function verfiy(value, regex, errorMessage){
+function verfiy(inputId, value, regex, errorMessage){
     if(value === "" || !regex.test(value)){
         console.log(errorMessage);
+        inputId.classList.add("contact__input--error");
+        inputId.nextElementSibling.textContent = errorMessage;
     } else {
         console.log("Votre entrée est valide !");
+        if(inputId.classList.contains("contact__input--error")){
+            inputId.classList.remove("contact__input--error");
+            inputId.nextElementSibling.textContent = "";
+        }
     }
 }

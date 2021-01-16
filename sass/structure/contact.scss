@@ -31,6 +31,12 @@
             max-height: 100px;
             overflow-y: scroll;
         }
+
+        small{
+            color: #EB5F5F;
+            font-size: 12px;
+            font-style: italic;
+        }
     }
 
     &__label{
@@ -52,6 +58,11 @@
         &:focus{
             border-color: $font-color-enhance;
             outline: none;
+        }
+
+        &--error{
+            color: #EB5F5F;
+            border-color: #EB5F5F;
         }
     }
 }

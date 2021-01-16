@@ -108,12 +108,14 @@ body {
 .portfolio__title {
   font-size: 30px;
   font-weight: 600;
+  text-align: center;
 }
 .portfolio__subtitle {
   font-size: 15px;
   line-height: 25px;
   color: #ACACAC;
   margin-bottom: 62px;
+  text-align: center;
 }
 .portfolio__img {
   position: relative;
@@ -320,6 +322,11 @@ body {
   max-height: 100px;
   overflow-y: scroll;
 }
+.contact__labelDiv small {
+  color: #EB5F5F;
+  font-size: 12px;
+  font-style: italic;
+}
 .contact__label {
   font-size: 15px;
   display: block;
@@ -336,6 +343,10 @@ body {
 .contact__input:focus {
   border-color: #E38E60;
   outline: none;
+}
+.contact__input--error {
+  color: #EB5F5F;
+  border-color: #EB5F5F;
 }
 
 /*# sourceMappingURL=style.css.map */

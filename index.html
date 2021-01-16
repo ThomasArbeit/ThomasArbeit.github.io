@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <section class="l-page">
+    <div class="l-page">
 
         <section class="hero">
             <header class="header">
@@ -83,17 +83,17 @@
             
         </section>
         
-    </section>
+    </div>
 
-    <section class="cta">
+    <div class="cta">
         <div class="l-page l-page--noline">
             <h2 class="cta__title">Mon travail vous plait ?</h2>
             <button class="cta__button button button--tertiary">Contactez-moi</button>
         </div>
-    </section>
+    </div>
 
-    <section class="l-page">
-        <section class="skills">
+    <div class="l-page">
+        <div class="skills">
             <h2 class="skills__title">Mes compétences</h2>
             <p class="skills__subtitle">
                 Ce qui me permet de réaliser ces projets 👌 
@@ -150,9 +150,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section class="about">
+        <div class="about">
             <h2 class="about__title">A propos</h2>
             <p class="about__subtitle">Un peu plus d'informations 👋 </p>
             <div class="about__content">
@@ -199,13 +199,13 @@
                     </ul>
                 </div>
             </div>
-        </section>
+        </div>
 
         
-    </section>
+    </div>
 
-    <section class="contact">
-        <section class="l-page l-page--noline l-page--nopadding">
+    <div class="contact">
+        <div class="l-page l-page--noline l-page--nopadding">
             <div class="contact__text">
                 <h2 class="contact__title">Contactez-moi</h2>
                 <p class="contact__subtitle">Vous avez des questions, ou voulez travailler avec moi ?  🤝</p>
@@ -215,26 +215,30 @@
                     <div class="contact__labelDiv">
                         <label for="name" class="contact__label">Votre Nom</label>
                         <input type="text" name="name" id="name" class="contact__input">
+                        <small></small>
                     </div>
                     <div class="contact__labelDiv">
                         <label for="email" class="contact__label">Votre Email</label>
                         <input type="email" name="email" id="email" class="contact__input">
+                        <small></small>
                     </div>
                     <div class="contact__labelDiv">
                         <label for="title" class="contact__label">Titre</label>
                         <input type="text" name="title" id="title" class="contact__input">
+                        <small></small>
                     </div>
                     <div class="contact__labelDiv">
                         <label for="message" class="contact__label">Votre Message</label>
                         <textarea name="message" id="message" cols="30" rows="10" class="contact__input"></textarea>
+                        <small></small>
                     </div>
                     <input type="submit" id="submit" class="contact__button button">
                 </form>
             </div>
             
-        </section>
+        </div>
         
-    </section>
+    </div>
     
 
     <script src="form.js"></script>
