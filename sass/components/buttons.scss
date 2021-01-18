@@ -6,6 +6,10 @@
     font-weight: 700;
     font-size: 15px;
 
+    @media screen and(min-width: 1100px) {
+        padding: 15px 30px;
+    }
+
     cursor: pointer;
 
     transition: opacity 0.1s linear;
@@ -28,6 +32,10 @@
         background: $background-color-primary;
         color: $font-color-quartiary;
         font-weight: 400;
+
+        @media screen and(min-width: 1100px) {
+            padding: 13px 28px;
+        }
     }
 
     &--tertiary{

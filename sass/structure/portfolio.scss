@@ -1,10 +1,21 @@
 .portfolio{
     padding: 96px 0 142px 0;
 
+    @media screen and (min-width: 760px) {
+        padding-top: 160px;
+    }
+
     &__title{
         font-size: 30px;
         font-weight: 600;
         text-align: center;
+
+        @media screen and (min-width: 1100px) {
+            text-align: unset;
+            font-size: 48px;
+            line-height: 52px;
+            margin-bottom: 10px;
+        }
     }
 
     &__subtitle{
@@ -14,6 +25,12 @@
         margin-bottom: 62px;
 
         text-align: center;
+
+        @media screen and (min-width: 760px) {
+            text-align: unset;
+            font-size: 18px;
+            margin-bottom: 128px;
+        }
     }
 
     &__img{
@@ -39,14 +56,52 @@
         }
     }
 
+    &__item{
+
+        @media screen and (min-width: 760px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 234px;
+        }
+    }
+
+    &__textcontent{
+
+        @media screen and (min-width: 760px) {
+            margin: 30px 0 auto 96px;
+            padding-right: 25%;
+        }
+    }
+
     &__itemtitle{
         font-size: 18px;
         font-weight: 600;
         margin-bottom: 5px;
+
+        @media screen and (min-width: 760px) {
+            font-size: 32px;
+            line-height: 41px;
+            margin-bottom: 25px;
+        }
+    }
+
+    &__description{
+        display: none;
+
+        @media screen and (min-width: 760px) {
+            display: unset;
+            font-size: 18px;
+            line-height: 27px;
+            color: $font-color-secondary;
+        }
     }
 
     &__tags{
         margin: 0 0 20px 0;
+
+        @media screen and (min-width: 760px) {
+            margin: 42px 0px;
+        }
     }
 
     &__tag{
@@ -56,6 +111,10 @@
         font-style: italic;
 
         margin-right: 16px;
+
+        @media screen and (min-width: 760px) {
+            font-size: 18px;
+        }
     }
 
     &__ctas{
@@ -67,9 +126,20 @@
         &--last{
             margin-bottom: 0;
         }
+
+        @media screen and (min-width: 760px) {
+            margin: unset;
+            justify-content: unset;
+        }
     }
 
     &__button{
         width: 50%;
+        @media screen and (min-width: 760px) {
+            width: unset;
+            margin-right: 22px;
+            font-size: 18px;
+        }
+        
     }
 }

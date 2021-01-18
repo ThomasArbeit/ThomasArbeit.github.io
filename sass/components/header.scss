@@ -8,9 +8,18 @@
         font-size: 18px;
         line-height: 18px;
         font-weight: 700;
+
+        @media screen and (min-width: 1100px) {
+            font-size: 20px;
+        }
     }
 
     &__hamburger{
         cursor: pointer;
+    }
+
+    @media screen and (min-width: 1100px) {
+        width: calc((4/6)*100%);
+        margin-bottom: 220px;
     }
 }

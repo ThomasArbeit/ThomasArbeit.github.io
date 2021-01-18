@@ -29,7 +29,11 @@
                 <button class="hero__cta button"><a href="#portfolio">Mon portfolio</a></button>
                 <button class="hero__cta button button--secondary"><a href="#contact">Me contacter</a></button>
             </div>
+            <div class="hero__hugeLine">
+                <img src="./img/cross.svg" alt="" class="hero__cross">
+            </div>
             <img src="./img/svg-hero-mobile.svg" alt="" class="hero__watermark">
+            
         </section>
 
         <section class="portfolio" id="portfolio">
@@ -45,22 +49,31 @@
                 
                 <div class="portfolio__textcontent">
                     <h3 class="portfolio__itemtitle">myteam - Website</h3>
+                    <p class="portfolio__description">
+                        Intégration de la maquette du site vitrine de
+                        l'entreprise MYTEAM. 
+                    </p>
                     <div class="portfolio__tags">
                         <span class="portfolio__tag">HTML</span>
                         <span class="portfolio__tag">CSS</span>
                         <span class="portfolio__tag">JAVASCRIPT</span>
                     </div>
                     <div class="portfolio__ctas">
-                        <button class="portfolio__button button"><a href="https://thomasarbeit.github.io/myteam-fullWebsite/about.html" target="_blank">DEMO</a></button>
+                        <button class="portfolio__button button"><a href="https://thomasarbeit.github.io/myteam-fullWebsite/index.html" target="_blank">DEMO</a></button>
                         <button class="portfolio__button button button--secondary"><a href="https://github.com/ThomasArbeit/myteam-fullWebsite" target="_blank">CODE</a></button>
                     </div>
                 </div>
+
                 <div class="portfolio__img">
                     <img src="./img/windbnb.jpg" alt="windbnb">
                 </div>
                 
                 <div class="portfolio__textcontent">
                     <h3 class="portfolio__itemtitle">WindBnb - Appartement reservation</h3>
+                    <p class="portfolio__description">
+                        Intégration de la maquette du site vitrine de
+                        l'entreprise MYTEAM. 
+                    </p>
                     <div class="portfolio__tags">
                         <span class="portfolio__tag">HTML</span>
                         <span class="portfolio__tag">CSS</span>
@@ -78,6 +91,10 @@
                 
                 <div class="portfolio__textcontent">
                     <h3 class="portfolio__itemtitle">Insure - Assurance santé</h3>
+                    <p class="portfolio__description">
+                        Intégration de la maquette du site vitrine de
+                        l'entreprise MYTEAM. 
+                    </p>
                     <div class="portfolio__tags">
                         <span class="portfolio__tag">HTML</span>
                         <span class="portfolio__tag">CSS</span>
@@ -96,8 +113,11 @@
 
     <div class="cta">
         <div class="l-page l-page--noline">
-            <h2 class="cta__title">Mon travail vous plait ?</h2>
+            <div class="cta__content">
+                <h2 class="cta__title">Mon travail vous plait ?</h2>
             <button class="cta__button button button--tertiary"><a href="#contact">Contactez-moi</a> </button>
+            </div>
+            
         </div>
     </div>
 
@@ -215,35 +235,40 @@
 
     <div class="contact" id="contact">
         <div class="l-page l-page--noline l-page--nopadding">
-            <div class="contact__text">
-                <h2 class="contact__title">Contactez-moi</h2>
-                <p class="contact__subtitle">Vous avez des questions, ou voulez travailler avec moi ?  🤝</p>
+            <div class="contact__content">
+
+                <div class="contact__text">
+                    <h2 class="contact__title">Contactez-moi</h2>
+                    <p class="contact__subtitle">Vous avez des questions, ou voulez travailler avec moi ?  🤝</p>
+                </div>
+                <div class="contact__contact">
+                    <form action="" class="contact__form">
+                        <div class="contact__labelDiv">
+                            <label for="name" class="contact__label">Votre Nom</label>
+                            <input type="text" name="name" id="name" class="contact__input">
+                            <small></small>
+                        </div>
+                        <div class="contact__labelDiv">
+                            <label for="email" class="contact__label">Votre Email</label>
+                            <input type="email" name="email" id="email" class="contact__input">
+                            <small></small>
+                        </div>
+                        <div class="contact__labelDiv">
+                            <label for="title" class="contact__label">Titre</label>
+                            <input type="text" name="title" id="title" class="contact__input">
+                            <small></small>
+                        </div>
+                        <div class="contact__labelDiv">
+                            <label for="message" class="contact__label">Votre Message</label>
+                            <textarea name="message" id="message" cols="30" rows="10" class="contact__input"></textarea>
+                            <small></small>
+                        </div>
+                        <input type="submit" id="submit" class="contact__button button">
+                    </form>
+                </div>
+                
             </div>
-            <div class="contact__contact">
-                <form action="" class="contact__form">
-                    <div class="contact__labelDiv">
-                        <label for="name" class="contact__label">Votre Nom</label>
-                        <input type="text" name="name" id="name" class="contact__input">
-                        <small></small>
-                    </div>
-                    <div class="contact__labelDiv">
-                        <label for="email" class="contact__label">Votre Email</label>
-                        <input type="email" name="email" id="email" class="contact__input">
-                        <small></small>
-                    </div>
-                    <div class="contact__labelDiv">
-                        <label for="title" class="contact__label">Titre</label>
-                        <input type="text" name="title" id="title" class="contact__input">
-                        <small></small>
-                    </div>
-                    <div class="contact__labelDiv">
-                        <label for="message" class="contact__label">Votre Message</label>
-                        <textarea name="message" id="message" cols="30" rows="10" class="contact__input"></textarea>
-                        <small></small>
-                    </div>
-                    <input type="submit" id="submit" class="contact__button button">
-                </form>
-            </div>
+            
             
         </div>
         
