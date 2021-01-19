@@ -3,6 +3,9 @@ $one-half-0: calc(100%/2);
 $one-half-1: calc((100%/2) + 2px);
 $one-half-2: calc((100%/2) + 4px);
 
+$one-fourth-0: calc(100%/4);
+$one-fourth-1: calc((100%/4) - 1px);
+$one-fourth-2: calc((100%/4) + 1px);
 
 
 $one-sixth-0: calc(100%/6);
@@ -27,7 +30,32 @@ $one-sixth-2: calc((100%/6) + 1px);
 
     margin: 0 39px;
 
-    @media screen and (min-width: 1000px){
+    @media screen and (min-width: 700px){
+        background: 
+        repeating-linear-gradient(
+            90deg,
+            transparent 1px, 
+            transparent $one-fourth-1,
+            $line-color $one-fourth-1,
+            $line-color $one-fourth-2
+        )
+    ;
+    margin: 0 80px;
+    }
+
+    @media screen and (min-width: 1100px){
+        background: 
+        repeating-linear-gradient(
+            90deg,
+            transparent 1px, 
+            transparent $one-sixth-1,
+            $line-color $one-sixth-1,
+            $line-color $one-sixth-2
+        )
+    ;
+    }
+
+    @media screen and (min-width: 1500px){
         background: 
         repeating-linear-gradient(
             90deg,
@@ -48,7 +76,7 @@ $one-sixth-2: calc((100%/6) + 1px);
         padding: 0 30px;
 
         @media screen and (min-width: 1100px) {
-            padding: 0 calc((1/6)*100%);
+            padding: 0 100px;
         }
     }
 

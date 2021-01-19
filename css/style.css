@@ -27,7 +27,18 @@ a {
   border-left: 2px solid rgba(255, 255, 255, 0.03);
   margin: 0 39px;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 700px) {
+  .l-page {
+    background: repeating-linear-gradient(90deg, transparent 1px, transparent calc((100%/4) - 1px), rgba(255, 255, 255, 0.03) calc((100%/4) - 1px), rgba(255, 255, 255, 0.03) calc((100%/4) + 1px));
+    margin: 0 80px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .l-page {
+    background: repeating-linear-gradient(90deg, transparent 1px, transparent calc((100%/6) - 1px), rgba(255, 255, 255, 0.03) calc((100%/6) - 1px), rgba(255, 255, 255, 0.03) calc((100%/6) + 1px));
+  }
+}
+@media screen and (min-width: 1500px) {
   .l-page {
     background: repeating-linear-gradient(90deg, transparent 1px, transparent calc((100%/6) - 1px), rgba(255, 255, 255, 0.03) calc((100%/6) - 1px), rgba(255, 255, 255, 0.03) calc((100%/6) + 1px));
     margin: 0 auto;
@@ -42,7 +53,7 @@ a {
 }
 @media screen and (min-width: 1100px) {
   .l-page--noline {
-    padding: 0 calc((1/6)*100%);
+    padding: 0 100px;
   }
 }
 .l-page--nopadding {
@@ -67,6 +78,11 @@ a {
 }
 .header__hamburger {
   cursor: pointer;
+}
+@media screen and (min-width: 700px) {
+  .header {
+    margin-bottom: 100px;
+  }
 }
 @media screen and (min-width: 1100px) {
   .header {
@@ -160,10 +176,14 @@ a {
   height: 100vh;
   padding-top: 43px;
 }
+@media screen and (min-width: 700px) {
+  .hero {
+    padding-top: 70px;
+  }
+}
 @media screen and (min-width: 1100px) {
   .hero {
     text-align: left;
-    padding-top: 70px;
   }
 }
 .hero__title {
@@ -172,10 +192,21 @@ a {
   margin-bottom: 36px;
   font-weight: 600;
 }
+@media screen and (min-width: 700px) {
+  .hero__title {
+    font-size: 52px;
+    line-height: 62px;
+  }
+}
 @media screen and (min-width: 1100px) {
   .hero__title {
     font-size: 62px;
     line-height: 74px;
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .hero__title {
     width: 50%;
   }
 }
@@ -189,10 +220,19 @@ a {
   font-weight: 400;
   margin-bottom: 60px;
 }
+@media screen and (min-width: 700px) {
+  .hero__subtitle {
+    width: 80%;
+    margin-bottom: 90px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @media screen and (min-width: 1100px) {
   .hero__subtitle {
     font-size: 18px;
     width: 50%;
+    margin: unset;
     margin-bottom: 110px;
   }
 }
@@ -203,13 +243,26 @@ a {
 .hero__ctas :nth-child(1) {
   margin-bottom: 20px;
 }
+@media screen and (min-width: 700px) {
+  .hero__ctas :nth-child(1) {
+    margin: unset;
+    margin: 0 10px;
+  }
+}
 @media screen and (min-width: 1100px) {
   .hero__ctas :nth-child(1) {
     margin: unset;
   }
 }
+@media screen and (min-width: 700px) {
+  .hero__ctas {
+    flex-direction: unset;
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 1100px) {
   .hero__ctas {
+    justify-content: unset;
     flex-direction: unset;
   }
 }
@@ -218,11 +271,17 @@ a {
   margin: auto;
   width: 100%;
 }
+@media screen and (min-width: 700px) {
+  .hero__cta {
+    margin: unset;
+    width: unset;
+    margin: 0 10px;
+  }
+}
 @media screen and (min-width: 1100px) {
   .hero__cta {
-    width: unset;
-    margin: unset;
     font-size: 18px;
+    margin: unset;
     margin-right: 44px !important;
   }
 }
@@ -273,6 +332,12 @@ a {
   font-weight: 600;
   text-align: center;
 }
+@media screen and (min-width: 700px) {
+  .portfolio__title {
+    font-size: 38px;
+    margin-bottom: 6px;
+  }
+}
 @media screen and (min-width: 1100px) {
   .portfolio__title {
     text-align: unset;
@@ -288,11 +353,15 @@ a {
   margin-bottom: 62px;
   text-align: center;
 }
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 700px) {
   .portfolio__subtitle {
-    text-align: unset;
     font-size: 18px;
     margin-bottom: 128px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .portfolio__subtitle {
+    text-align: unset;
   }
 }
 .portfolio__img {
@@ -314,16 +383,21 @@ a {
   left: 0;
   transform: translateY(-30%);
 }
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 700px) {
   .portfolio__item {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 234px;
+    row-gap: 135px;
   }
 }
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 700px) {
   .portfolio__textcontent {
-    margin: 30px 0 auto 96px;
+    margin: 10px 0 auto 42px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .portfolio__textcontent {
+    margin: 30px 0 auto 45px;
     padding-right: 25%;
   }
 }
@@ -332,17 +406,24 @@ a {
   font-weight: 600;
   margin-bottom: 5px;
 }
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 700px) {
   .portfolio__itemtitle {
-    font-size: 32px;
-    line-height: 41px;
-    margin-bottom: 25px;
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 19px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .portfolio__itemtitle {
+    font-size: 28px;
+    line-height: 28px;
+    margin-bottom: 21px;
   }
 }
 .portfolio__description {
   display: none;
 }
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 1100px) {
   .portfolio__description {
     display: unset;
     font-size: 18px;
@@ -353,9 +434,15 @@ a {
 .portfolio__tags {
   margin: 0 0 20px 0;
 }
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 700px) {
   .portfolio__tags {
-    margin: 42px 0px;
+    margin: unset;
+    margin-bottom: 22px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .portfolio__tags {
+    margin-top: 40px;
   }
 }
 .portfolio__tag {
@@ -363,9 +450,9 @@ a {
   color: #5b5b5b;
   font-weight: 700;
   font-style: italic;
-  margin-right: 16px;
+  margin-right: 5px;
 }
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 1100px) {
   .portfolio__tag {
     font-size: 18px;
   }
@@ -379,7 +466,7 @@ a {
 .portfolio__ctas--last {
   margin-bottom: 0;
 }
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 700px) {
   .portfolio__ctas {
     margin: unset;
     justify-content: unset;
@@ -388,7 +475,7 @@ a {
 .portfolio__button {
   width: 50%;
 }
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 700px) {
   .portfolio__button {
     width: unset;
     margin-right: 22px;
@@ -423,6 +510,7 @@ a {
 @media screen and (min-width: 1100px) {
   .cta__title {
     margin: unset;
+    font-size: 48px;
   }
 }
 .cta__button {
@@ -450,6 +538,12 @@ a {
   font-size: 30px;
   font-weight: 600;
 }
+@media screen and (min-width: 700px) {
+  .skills__title {
+    font-size: 38px;
+    margin-bottom: 6px;
+  }
+}
 @media screen and (min-width: 1100px) {
   .skills__title {
     font-size: 48px;
@@ -459,6 +553,12 @@ a {
   font-size: 15px;
   color: #ACACAC;
   margin-bottom: 70px;
+}
+@media screen and (min-width: 700px) {
+  .skills__subtitle {
+    font-size: 18px;
+    margin-bottom: 128px;
+  }
 }
 @media screen and (min-width: 1100px) {
   .skills__subtitle {
@@ -547,6 +647,12 @@ a {
   font-size: 30px;
   font-weight: 600;
 }
+@media screen and (min-width: 700px) {
+  .about__title {
+    font-size: 38px;
+    margin-bottom: 6px;
+  }
+}
 @media screen and (min-width: 1100px) {
   .about__title {
     font-size: 48px;
@@ -566,7 +672,6 @@ a {
 }
 .about__photo img {
   width: 100%;
-  height: 100%;
 }
 @media screen and (min-width: 1100px) {
   .about__photo {
@@ -686,6 +791,12 @@ a {
   font-size: 30px;
   font-weight: 600;
 }
+@media screen and (min-width: 700px) {
+  .contact__title {
+    font-size: 38px;
+    margin-bottom: 6px;
+  }
+}
 @media screen and (min-width: 1100px) {
   .contact__title {
     font-size: 42px;
@@ -694,6 +805,11 @@ a {
 .contact__subtitle {
   font-size: 15px;
   color: #ACACAC;
+}
+@media screen and (min-width: 700px) {
+  .contact__subtitle {
+    font-size: 18px;
+  }
 }
 @media screen and (min-width: 1100px) {
   .contact__subtitle {

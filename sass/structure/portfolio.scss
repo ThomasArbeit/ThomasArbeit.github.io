@@ -10,6 +10,11 @@
         font-weight: 600;
         text-align: center;
 
+        @media screen and(min-width: 700px) {
+            font-size: 38px;
+            margin-bottom: 6px;
+        }
+
         @media screen and (min-width: 1100px) {
             text-align: unset;
             font-size: 48px;
@@ -26,10 +31,13 @@
 
         text-align: center;
 
-        @media screen and (min-width: 760px) {
-            text-align: unset;
+        @media screen and (min-width: 700px) {
             font-size: 18px;
             margin-bottom: 128px;
+        }
+
+        @media screen and (min-width: 1100px) {
+            text-align: unset;
         }
     }
 
@@ -58,17 +66,21 @@
 
     &__item{
 
-        @media screen and (min-width: 760px) {
+        @media screen and (min-width: 700px) {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            row-gap: 234px;
+            row-gap: 135px;
         }
     }
 
     &__textcontent{
 
-        @media screen and (min-width: 760px) {
-            margin: 30px 0 auto 96px;
+        @media screen and (min-width: 700px){
+            margin: 10px 0 auto 42px;
+        }
+
+        @media screen and (min-width: 1440px) {
+            margin: 30px 0 auto 45px;
             padding-right: 25%;
         }
     }
@@ -78,17 +90,25 @@
         font-weight: 600;
         margin-bottom: 5px;
 
-        @media screen and (min-width: 760px) {
-            font-size: 32px;
-            line-height: 41px;
-            margin-bottom: 25px;
+        @media screen and(min-width: 700px) {
+            font-size: 21px;
+            line-height: 25px;
+
+            margin-bottom: 19px;
+        }
+
+        @media screen and(min-width: 1100px) {
+            font-size: 28px;
+            line-height: 28px;
+
+            margin-bottom: 21px;
         }
     }
 
     &__description{
         display: none;
 
-        @media screen and (min-width: 760px) {
+        @media screen and (min-width: 1100px) {
             display: unset;
             font-size: 18px;
             line-height: 27px;
@@ -99,9 +119,15 @@
     &__tags{
         margin: 0 0 20px 0;
 
-        @media screen and (min-width: 760px) {
-            margin: 42px 0px;
+        @media screen and(min-width: 700px) {
+            margin: unset;
+            margin-bottom: 22px;
         }
+
+        @media screen and(min-width: 1100px) {
+            margin-top: 40px;
+        }
+        
     }
 
     &__tag{
@@ -110,9 +136,9 @@
         font-weight: 700;
         font-style: italic;
 
-        margin-right: 16px;
+        margin-right: 5px;
 
-        @media screen and (min-width: 760px) {
+        @media screen and (min-width: 1100px) {
             font-size: 18px;
         }
     }
@@ -127,7 +153,7 @@
             margin-bottom: 0;
         }
 
-        @media screen and (min-width: 760px) {
+        @media screen and (min-width: 700px) {
             margin: unset;
             justify-content: unset;
         }
@@ -135,7 +161,7 @@
 
     &__button{
         width: 50%;
-        @media screen and (min-width: 760px) {
+        @media screen and (min-width: 700px) {
             width: unset;
             margin-right: 22px;
             font-size: 18px;
