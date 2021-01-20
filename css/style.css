@@ -865,5 +865,9 @@ a {
   color: #EB5F5F;
   border-color: #EB5F5F;
 }
+.contact__input--success {
+  color: #07ca5f;
+  border-color: #07ca5f;
+}
 
 /*# sourceMappingURL=style.css.map */

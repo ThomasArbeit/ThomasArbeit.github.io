@@ -55,6 +55,12 @@ submit.addEventListener('click', function(e){
             emailId.value = "";
             titleId.value = "";
             messageId.value = "";
+
+            window.alert(`Merci ${nameId.value} pour votre message ! J'y répondrais au plus vite.`);
+            let inputs = document.querySelectorAll(".contact__input");
+            inputs.forEach(input => {
+                input.classList.remove("contact__input--success");
+            })
         })
     }
 })
@@ -72,5 +78,6 @@ function verfiy(inputId, value, regex, errorMessage){
             inputId.classList.remove("contact__input--error");
             inputId.nextElementSibling.textContent = "";
         }
+        inputId.classList.add("contact__input--success");
     }
 }
