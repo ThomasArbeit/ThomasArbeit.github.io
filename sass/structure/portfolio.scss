@@ -80,7 +80,7 @@
         }
 
         @media screen and (min-width: 1440px) {
-            margin: 30px 0 auto 45px;
+            margin: 30px 0 auto 96px;
             padding-right: 25%;
         }
     }
@@ -102,6 +102,13 @@
             line-height: 28px;
 
             margin-bottom: 21px;
+        }
+
+        @media screen and(min-width: 1400px) {
+            font-size: 32px;
+            line-height: 32px;
+
+            margin-bottom: 24px;
         }
     }
 
